@@ -1,0 +1,23 @@
+Name: Ananya Prasad
+PRN:  24070521141
+Batch and Section: 2024-28 Section c
+Date: July 09, 2028
+
+%{
+#include<stdio.h>
+%}
+
+%%
+hello {printf("Found hello!");}
+.|\n
+%%
+
+int main(){
+printf("Enter a String: ");
+yylex();
+return 0;
+}
+
+int yywrap(){
+return 1;
+}
